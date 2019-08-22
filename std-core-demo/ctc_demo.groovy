@@ -31,6 +31,7 @@ pipelineJob("Cross Team Collaboration/CTC Build job") {
 			}
 		    }
 		}''')
+		sandbox()
 	   }
 	}
 }
