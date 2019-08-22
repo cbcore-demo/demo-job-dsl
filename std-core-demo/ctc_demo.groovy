@@ -5,7 +5,7 @@ folder('Cross Team Collaboration') {
 pipelineJob("Cross Team Collaboration/CTC Build job") {
 	definition {
 		cps {
-		'''pipeline {
+		script('''pipeline {
 		    agent { label 'master' } 
 		    stages {
 			stage('Build') { 
@@ -30,7 +30,7 @@ pipelineJob("Cross Team Collaboration/CTC Build job") {
 			    }
 			}
 		    }
-		}'''
+		}''')
 	   }
 	}
 }
